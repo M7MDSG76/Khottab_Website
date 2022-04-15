@@ -1,0 +1,16 @@
+{% extends 'gen_base.html'%}
+
+{%block title%} Imam {%endblock%}
+
+{%block content %}
+    <h1>Khotbbah</h1>
+    <hr>
+    
+    <h2>{{khottbah.title}}</h2>
+    <p>{{khottbah.imam}}</p>
+    <div class="khottbah-content">
+        <p>{{khottbah.content}}</p>
+    </div>
+    
+    <p><strong>number of visits</strong> {{num_visits}}   time{{num_visits|pluralize}}</p>
+{%endblock%}
