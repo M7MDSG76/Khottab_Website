@@ -1,0 +1,19 @@
+{% extends 'gen_base.html' %}
+
+{% block content %}
+<h1>Name: {{imam.first_name}} {{imam.middel_name}} {{imam.last_name}}</h1>
+<ul>
+    <li><strong>Nationality:</strong> {{imam.nationality}}</li>
+    <li><strong>Khottab:</strong> {{imam.khottab.title}}</li>
+    <hr>
+   
+    <ol>
+        {% for khottbah in imam.khottab.all %}
+            <li>
+                <a href="{{khottbah.get_abslute_url}}">{{khottbah.title}}</a>
+            </li>
+        {% endfor %}
+    </ol>
+</ul>
+<p>Profile Visits: {{profile_visits}}</p>
+{% endblock %}

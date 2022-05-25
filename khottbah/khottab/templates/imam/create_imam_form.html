@@ -1,0 +1,13 @@
+{% extends 'gen_base.html' %}
+
+{% block content %}
+
+    <h1>Create Imam:</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}

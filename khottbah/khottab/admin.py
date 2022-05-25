@@ -9,7 +9,7 @@ class KhottbahInline(admin.TabularInline):
 @admin.register(Imam)
 class ImamAdmin(admin.ModelAdmin):
     # list display is what data will showup in the admin list view model page.
-    list_display = ('first_name', 'last_name', 'nationality')
+    list_display = ('first_name', 'last_name', 'nationality', )
     
     # setup the filter settings for the model in the admin view.
     list_filter = ('first_name', 'nationality')

@@ -16,8 +16,8 @@
           {% block sidebar %}
             <ul class="sidebar-nav">
               <li><a href="{% url 'index' %}">Home</a></li>
-              <li><a href="{% url 'imam_list' %}">Imams</a></li>
-              <li><a href="{% url 'khottab_list' %}">Khottab</a></li>
+              <li><a href="{% url 'imam-list' %}">Imams</a></li>
+              <li><a href="{% url 'khottab-list' %}">Khottab</a></li>
               <hr>
               <!-- Login Authintication section -->
               {% if user.is_authenticated %}

@@ -7,11 +7,11 @@
 <p>{{imam.nationality}}</p>
 <hr>
 <h2>Khottab:</h2>
-{% for khottbah in imam.khottbah_set.all%}
+{% for khottbah in imam.khottab.all%}
 <hr>
 <ul>
     <li>
-        <strong>{{khottbah.title}}</strong> <br>
+        <a href="{{khottbah.get_abslute_url }}"><strong>{{khottbah.title}}</strong></a> <br>
         <strong>Mosque:</strong> {{khottbah.mosque}}
     </li>
 </ul>

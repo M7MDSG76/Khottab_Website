@@ -9,8 +9,8 @@
     <h2>{{khottbah.title}}</h2>
     <p>{{khottbah.imam}}</p>
     <div class="khottbah-content">
-        <p>{{khottbah.content}}</p>
-    </div>
+        <p>{{khottbah.content}} </p>
+    </div><a href="{% url 'khottbah-edite' khottbah.id %}">Edite</a>
     
     <p><strong>number of visits</strong> {{num_visits}}   time{{num_visits|pluralize}}</p>
 {%endblock%}
